@@ -9,7 +9,6 @@ import UIKit
 
 class CustomPageViewController: UIPageViewController, UIPageViewControllerDataSource,UIPageViewControllerDelegate {
    
-    var currrentPage = 0
     var subViewControllers: [UIViewController] = {
         return[
             UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "First") as! IntoViewController,
